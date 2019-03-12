@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="index.css">
+   <script src="jquery-2.1.4.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Tainan Snacks</title>
+    <script>
+       
+       $(function(){
+            commonheight();
+        function commonheight(){
+                 var h=$('header .img1').outerHeight();
+            $('header .img2').css('height',h+'px');
+        }
+
+           $(window).on('resize',function(){ /*視窗改變 重新取得高度*/
+                   commonheight();
+           });
+      
+});
+    </script>
+</head>
+<body>
+ <header>
+<img src="images/1a4afa11ddcf814af00b663a192c4bdb.jpg" alt="" class="img1">
+<img src="images/%E5%8F%B0%E5%8D%97%E5%B8%82%E5%8D%80.jpg" alt="" class="img2">
+<img src="images/%E8%82%89.jpg" alt="" class="img3">
+ </header>
+ <div class="page-header">
+ <div class="inner">
+     <h1>台南美食趣</h1>
+     <nav>
+     <ul>
+         <li><a href="#Guohua Street">國華街</a></li>
+         <li><a href="#Security road">保安路</a></li>
+     </ul>
+ </nav>
+ </div>
+ </div>
+ 
+ <div class="main">
+    <section id="Guohua Street" class="btn">
+       <img src="images/%E5%9C%8B%E8%8F%AF%E8%A1%97-18-1140x760.jpg" alt="" class="img4">
+        <h1 class="hintro">國華街介紹</h1>
+        <p class="intro">國華街不長，約兩公里多，道路也不寬，卻孕育了許多台南人的回憶；這裡一攤、那裏一鋪的路邊小吃，更是飽足了無數府城子民及外來遊客的胃。若是來台南不知道吃什麼，這兒絕對適合當嘗鮮的第一站。在日本雜誌《BRUTUS》所出版的「台灣要做的101件事」（101 Things To Do In Taiwan）一書，未使用常見的台灣小吃、台北101、九份等名景做為封面，反而選了充滿在地風情的台南國華街景，引起了熱烈的討論，也讓國華街再度聲名大噪。</p>
+        <button>更多介紹</button>
+    </section>
+</div>  
+<div id="pink">
+    <h2>美食地圖</h2>
+    <div class="dashed"></div>
+    <div class="imgs">
+    <img src="images/%E7%B4%94%E8%96%8F%E4%BB%81.jpg" alt="" class="img5">
+    <div class="vendorName" >純薏仁</div>
+    <img src="images/%E8%9C%B7%E5%B0%BE%E5%AE%B6.jpg" alt="" class="img5">
+    <div class="vendorName position1">蜷尾家</div>
+    <img src="images/%E6%B1%9F%E6%B0%B4%E8%99%9F.jpg" alt="" class="img5">
+    <div class="vendorName position2">江水號</div>
+    <img src="images/%E9%98%BF%E5%A8%9F.jpg" alt="" class="img5">
+    <div class="vendorName position3">阿娟</div>
+    <img src="images/%E7%B1%B3%E7%B2%89.jpg" alt="" class="img5">
+      <div class="vendorName position4">邱家</div>
+    <img src="images/%E9%AD%9A.jpg" class="img5" alt="">
+    <div class="vendorName position5">炸魚</div>
+    </div>
+   </div>
+<div class="main">
+    <section id="Security road" class="btn">
+       <img src="images/%E5%BB%9F.jpg" alt="" class="img4">
+        <h1 class="hintro">保安路介紹</h1>
+        <p class="intro">台南蠻多的著名美食小吃都有個共通點，就是附近會有香火鼎盛的廟宇，凡舉國華街、祭祀武廟週邊、水仙宮週邊⋯還有許多我也唸不出名稱的廟宇旁，都有著很受歡迎的在地美食，而其中台南這條一級戰區的保安路，當然也同樣有著神明庇祐囉。所以來台南，看到廟就進去拜拜祈求平安也很棒，這些廟宇可是非常保庇保庇的呢！拜完之後，更別忘記能在它附近找尋美味的小吃~</p>
+        <button>更多介紹</button>
+    </section>
+</div> 
+   <div id="gray">
+    <h2>美食地圖</h2>
+    <div class="dashed"></div>
+    <div class="imgs">
+    <img src="images/%E7%9F%AE%E4%BB%94%E5%9F%8E.jpg" alt="" class="img5">
+    <div class="vendorName" >矮仔城</div>
+    <img src="images/%E8%94%A1%E4%B8%89%E6%AF%9B.jpg" alt="" class="img5">
+    <div class="vendorName position1">蔡三毛</div>
+    <img src="images/%E8%B1%AC%E5%BF%83.JPG" alt="" class="img5">
+    <div class="vendorName position2">阿明</div>
+    <img src="images/%E9%8D%8B%E7%87%92.jpg" alt="" class="img5">
+    <div class="vendorName position3">醇涎坊</div>
+    <img src="images/%E9%98%BF%E9%B3%B3.jpg" alt="" class="img5">
+      <div class="vendorName position4">阿鳳</div>
+    <img src="images/%E5%8D%83.jpg" class="img5" alt="">
+    <div class="vendorName position5">六千</div>
+    </div>
+   </div>
+   
+</body>
+</html>
